@@ -48,9 +48,6 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
-# Makes errors better looking
-gem 'better_errors', '~> 2.9', '>= 2.9.1'
-
 #Bulma CSS
 gem 'bulma-rails', '~> 0.9.3'
 
@@ -78,7 +75,10 @@ group :development do
   gem 'guard', '~> 2.18'
   
   # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+
+  # Makes errors better looking
+  gem 'better_errors', '~> 2.9', '>= 2.9.1'
 
 end
 
